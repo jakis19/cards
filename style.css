@@ -1,0 +1,119 @@
+body {
+    background-color: black; /* Define a cor de fundo do corpo da página como um tom escuro*/
+    color: white; /*Define a cor do texto padrão como branco*/
+    width: 90%; /*Define a largura do corpo da página como 90% da tela*/
+    max-width: 960px; /*Define a largura máxima da página como 960 pixels*/
+    margin: 0 auto; /*Centraliza o corpo da página horizontalmente*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*Define a fonte da página como uma lista de fontes, com falback*/
+}
+
+.main-title {
+    font-size: 62px; /*Define o tamanho da fonte para o título principal como 62 pixels*/
+    text-transform: uppercase; /*Transforma o texto em letras maiúsculas*/
+    text-align: center; /*Alinha o título principal ao centro*/
+    margin: 46px 0; /*Define a margem superior e inferior como 46 pixels*/
+}
+
+.header {
+    display: flex; /*Utiliza o layout flexbox para organizar os elementos do cabeçalho*/
+    background-color: #05080a; /*Define a cor de fundo do cabeçalho como um tom escuro*/
+    padding: 16px; /*Adiciona um preenchimento interno de 16 pixels ao cabeçalho com espaço entre eles*/
+    justify-content: space-between; /*Distribui os elementos do cabeçalho com espaço entre eles*/
+    align-items: center; /*Alinha os itens do cabeçalho no centro verticalmente*/
+}
+
+.header__logo {
+    font-size: 36px; /*Define o tamanho da fonte do logotipo como 36 pixels*/
+    text-transform: uppercase; /*Transforma o texto do logotipo em letras maiúsculas*/
+    margin-left: 16px; /*Adiciona uma margem à esquerda de 16 pixels*/
+    letter-spacing: 2px; /*Aumenta o espaçamento entre as letras do logotipo em 2 pixels*/
+}
+
+.header__nav ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 18px;
+    gap: 16px;
+}   
+
+.header__nav a {
+    color: white; /*Define a cor dos links de navegação como branco*/
+    text-decoration: none; /*Remove o sublinhado dos links*/
+    padding: 14px; /*Adiciona um preenchimento interno de 14 pixels ao redor dos links*/
+    border-radius: 6px; /*Arredonda as bordas dos links com raio de 6 pixels*/
+}
+
+.header__nav a:hover {
+    text-decoration: underline; /*Adiciona um sublinhado aos links quando o mouse passa sobre eles*/
+}
+
+.header__nav__link--active {
+    background-color: rgb(118, 76, 197); /*Define a cor de fundo para o link ativo como amarelo*/
+    color: #0c1014; /*Define a cor do texto do link ativo como o tom de fundo da página*/
+    cursor: default; /*muda o cursor para indicar que já está na página atual*/
+    
+}
+
+.pricing {
+    display: flex; /*Utiliza o layout flexbox para organizar os elementos de preços*/
+    gap: 16px; /*Define um espaçamento de 16 pixels entre os planos de preço*/
+}
+
+.pricing-plan {
+    flex: 1; /*Faz com que cada plano de preço ocupe o mesmo espaço*/
+    background-color: #1f262c; /*Define cor de fundo de cada plano de preço como um tom escuro*/    
+    padding: 30px; /*Adiciona um preenchimento interno de 30 pixels aos planos*/
+    border-radius: 6px; /*Arredonda as bordas dos planos com um raio de 6 pixels*/
+    box-shadow: 0 5px 15px -6px black; /*Adiciona uma sombra às caixas de plano de preço*/
+    display: flex; /*Utiliza o layout flexbox dentro dos planos de preço*/
+    flex-direction: column; /*Define a direção do layout como uma coluna*/
+}
+
+.class-plan__title {
+    text-transform: uppercase; /*Transforma o título dos planos de preço em letras maiúsculas*/
+    border-bottom: 2px solid rgb(118, 76, 197); /*Adiciona uma borda inferior ao título dos planos de preço*/
+    margin-top: 0; /*Remove a margem superior*/
+    padding-bottom: 10px; /*Adiciona um preenchimento inferior de 10 pixels*/
+    letter-spacing: 2px; /*Aumenta o espaçamento entre as letras do título dos planos de preço*/
+}
+
+.pricing-plan p {
+    margin-top: 0; /*Remove a margem superior dos parágrafos dentro dos planos de preço*/
+}
+
+.pricing-plan__price {
+    font-size: 34px; /*Define o tamanho da fonte do preço como 34 pixels*/
+}
+
+.pricing-plan_features {
+    margin: 0 0 35px; /*Define a margem inferior como 35 pixels e remove as margens superior e laterais*/
+    color: #b5b5b5; /*Define a cor do texto das funcionalidades como um cinza claro*/
+    padding-left: 16px; /*Adiciona um preenchimento à esquerda de 16 pixels nas funcionalidades */
+    flex: 1; /*Faz com que a lista de funcionalidades ocupe o espaço restante no plano*/
+}
+
+.pricing-plan__features li::marker {
+    color:  rgb(118, 76, 197); /*Define a cor do marcador dos itens de lista como amarelo*/
+}
+
+.pricing-plan__cta {
+    text-decoration: none; /*Remove o sublinhado do botão de chamada para ação*/
+    color: #fdfdfd; /*Define a cor do texto do botão como o tom de fundo da página*/
+    background-color:  rgb(118, 76, 197); /*Define a cor de fundo do botão como amarelo*/
+    border-radius: 6px; /*Arredonda as bordas do botão com um raio de 6 pixels*/
+    text-transform: uppercase; /*Transforma o texto do botão em letras maiúsculas*/
+    font-size: 16px; /*Define o tamanho da fonte do botão como 16 pixels*/
+    font-weight: bold; /*Define a fonte do botão como negrito*/
+    padding: 16px 10px; /*Adiciona um preenchimento interno de 16 pixels verticalmente e 10 pixels horizontalmente */
+    text-align: center; /*Centraliza o texto do botão*/
+}
+
+.footer {
+    background-color: #0c1014;
+    color: #fff;
+    text-align: center;
+    padding: 5px 5px;
+    margin-bottom: 0px;
+    
+}
+
